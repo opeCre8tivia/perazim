@@ -10,8 +10,10 @@ A modern web based application for Perazim Security ltd
 > :memo: **Backend**
 
 ##
--Flask
--PostgresQL
--AWS
+- Flask
+- PostgresQL
+- AWS
+- Docker
+- GraphQL
 
 
