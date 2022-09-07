@@ -1,5 +1,5 @@
 ### perazim Security official web app
-[![next js]]
+
 A modern web based application for Perazim Security ltd
 
 ## Tech Stack
@@ -7,7 +7,7 @@ A modern web based application for Perazim Security ltd
 - Ant Design
 - Framer motion
 - Tailwind css
-== Backend ==
+> :memo: **Backend**
 -Flask
 -PostgresQL
 -AWS
