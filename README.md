@@ -1,8 +1,8 @@
-### perazim Security official web app
+## perazim Security official web app
 
 A modern web based application for Perazim Security ltd
 
-## Tech Stack
+### Tech Stack
 > :memo: **Frontend**
 - Next js
 - Ant Design
