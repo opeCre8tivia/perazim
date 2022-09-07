@@ -3,12 +3,12 @@
 A modern web based application for Perazim Security ltd
 
 ## Tech Stack
+> :memo: **Frontend**
 - Next js
 - Ant Design
 - Framer motion
 - Tailwind css
 > :memo: **Backend**
-
 ##
 - Flask
 - PostgresQL
