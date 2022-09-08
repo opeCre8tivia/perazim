@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import MenuBar from '../src/Components/MenuBar'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -13,9 +14,8 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className="text-green-500 font-bold">
-          PERAZIM OFFICIAL
-        </h1>
+       {/* modern responsive dynamic menu bar */}
+        <MenuBar/>
 
        
 
