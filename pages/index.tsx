@@ -17,6 +17,10 @@ const Home: NextPage = () => {
        {/* modern responsive dynamic menu bar */}
         <MenuBar/>
 
+        <div style={{width:"100%",height:"900px"}}>
+
+        </div>
+
        
 
        
