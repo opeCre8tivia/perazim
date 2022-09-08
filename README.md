@@ -1,5 +1,7 @@
 ## PERAZIM SECURITY OFFICIAL WEBSITE
 
+A modern web apllication for Perazim Security ltd
+
 ### Tech Stack
 > :memo: **Frontend**
 - Next js
