@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Carousel from '../src/Components/Carousel'
 import MenuBar from '../src/Components/MenuBar'
 import styles from '../styles/Home.module.css'
 
@@ -16,6 +17,9 @@ const Home: NextPage = () => {
       <main className={styles.main}>
        {/* modern responsive dynamic menu bar */}
         <MenuBar/>
+
+        {/* carousel section */}
+        <Carousel />
 
         <div style={{width:"100%",height:"900px"}}>
 
