@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from "react";
 import { motion, useInView } from "framer-motion";
-import MenuBarContent from "../MenuBarContent/MenuBarContent";
+import NavBarContent from "../NavBarContent";
 
-const MenuBar = () => {
+const NavBar = () => {
   /*
    *  Detect when menu bar is in viewport or out of viewport
    */
@@ -13,12 +13,12 @@ const MenuBar = () => {
     <>
       <motion.div
         initial={{ height: 0 }}
-        animate={{ height: "100px" }}
+        animate={{ height: "60px" }}
         transition={{ duration: 1 }}
         ref={ref}
-        className="w-full h-[80px] flex items-center px-10 bg-pink-500 font-bold text-green-300"
+        className="w-full h-[60px] flex items-center"
       >
-        <MenuBarContent />
+        <NavBarContent />
       </motion.div>
       {!isInView && (
         <motion.div
@@ -26,13 +26,13 @@ const MenuBar = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           exit={{ opacity: 0 }}
-          className="w-full h-[100px] fixed top-0 left-0 flex items-center px-10 bg-blue-500 font-bold text-green-300"
+          className="w-full h-[60px] fixed top-0 left-0 flex items-center"
         >
-          MENU BAR
+          <NavBarContent />
         </motion.div>
       )}
     </>
   );
 };
 
-export default MenuBar;
+export default NavBar;
