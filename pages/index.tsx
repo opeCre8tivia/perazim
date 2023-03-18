@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import SectionHeading from "../src/Components/Atomic/SectionHeading/sectionHeading";
 import SectionTitle from "../src/Components/Atomic/SectionTitle";
+import Footer from "../src/Components/Footer";
 import HeroSection from "../src/Components/HeroSection";
 import LeftImageSection from "../src/Components/LeftImageSection";
 import NavBar from "../src/Components/NavBar";
@@ -82,6 +83,10 @@ const Home: NextPage = () => {
             </div>
           </section>
         </div>
+
+        {/* footer */}
+
+        <Footer />
       </main>
     </div>
   );
