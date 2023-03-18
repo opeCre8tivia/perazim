@@ -19,9 +19,15 @@ const SectionHeading = ({
         padding: 4,
         margin: 4,
         color: color,
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
       }}
     >
       {heading}
+      {/* line */}
+      <div className="w-[20%] h-[4px] bg-gradient-to-tr from-orange-400 to-red-500"></div>
     </div>
   );
 };

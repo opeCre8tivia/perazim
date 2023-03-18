@@ -16,7 +16,7 @@ const NavBar = () => {
         animate={{ height: "60px" }}
         transition={{ duration: 1 }}
         ref={ref}
-        className="w-full h-[60px] flex items-center"
+        className="w-full h-fit flex items-center bg-white"
       >
         <NavBarContent />
       </motion.div>
@@ -26,7 +26,7 @@ const NavBar = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           exit={{ opacity: 0 }}
-          className="w-full h-[60px] fixed top-0 left-0 flex items-center"
+          className="w-full h-fit fixed top-0 left-0 flex items-center p-1 bg-white z-50"
         >
           <NavBarContent />
         </motion.div>
