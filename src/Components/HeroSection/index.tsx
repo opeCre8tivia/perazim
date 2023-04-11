@@ -9,8 +9,8 @@ const HeroSection = () => {
           Security Solutions for businesses and individuals
         </h1>
         <p className="max-w-2xl mb-6 pl-6 pr-6 font-light text-gray-500 text-center lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-          From checkout to global sales tax compliance, companies around the
-          world use Flowbite to simplify their payment stack.
+          We hold a reputation for both effective security solutions and the use
+          of innovative technology in the protection of life and property
         </p>
 
         {/* buttons */}
@@ -34,7 +34,6 @@ const HeroSection = () => {
         />
       </div>
     </div>
-    //0784209818
   );
 };
 

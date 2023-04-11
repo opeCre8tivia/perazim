@@ -59,10 +59,10 @@ const LeftImageSection = (props: Props) => {
                 Your Security is our mission.
               </h2>
               <p className="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
-                Flowbite helps you connect with friends and communities of
-                people who share your interests. Connecting with your friends
-                and family as well as discovering new ones is easy with features
-                like Groups.
+                We have the team, tools,and expertise needed to ensure a more
+                secure enviroment for our client at any given location
+                countrywide. With our national expertise in security assessment
+                and management we render a service that is unmatched
               </p>
               <Button title="Find out more" />
             </div>
