@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import NavBarContent from "../NavBarContent";
 
@@ -26,7 +26,7 @@ const NavBar = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           exit={{ opacity: 0 }}
-          className="w-full h-fit fixed top-0 left-0 flex items-center p-1 bg-white z-50"
+          className="w-full h-fit fixed top-0 left-0 flex items-center p-1 bg-white shadow-sm z-50"
         >
           <NavBarContent />
         </motion.div>

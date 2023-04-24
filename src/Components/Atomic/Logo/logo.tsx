@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 type Props = {
@@ -14,17 +15,17 @@ type Props = {
 
 const Logo = ({ long, color = "red" }: Props) => {
   return (
-    <div className="min-w-[100px] w-auto h-[100px] flex justify-center items-center mt-6 gap-1">
-      <div className="w-[80px] h-[80px] flex justify-center items-center">
-        <img
+    <div className="flex w-fit h-fit justify-center items-center m-1">
+      <div className="flex justify-center items-center">
+        <Image
           alt="perazim logo"
-          src="./perazimlogo.png"
-          width="50px"
-          height="50px"
+          src="/perazimlogo.png"
+          width={50}
+          height={50}
         />
       </div>
       {long && (
-        <div className={`text-lg  text-${color}-500 font-bold hidden md:block`}>
+        <div className={`text-lg  text-${color}-500 font-bold px-4`}>
           PERAZIM SECURITY
         </div>
       )}
