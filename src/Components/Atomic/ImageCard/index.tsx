@@ -10,7 +10,7 @@ type Props = {
 
 const ImageCard = ({ href, title, caption }: Props) => {
   return (
-    <div className="w-full md:w-[32%] md:min-h-[300px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div className="w-full md:w-[32%] md:h-[400px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <a>
         <img
           className="rounded-t-lg"
