@@ -18,7 +18,8 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
     "react-scroll-into-view": "^1.12.1",
-    "react-toastify": "^9.1.3"
+    "react-toastify": "^9.1.3",
+    "react-whatsapp-widget": "^2.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",

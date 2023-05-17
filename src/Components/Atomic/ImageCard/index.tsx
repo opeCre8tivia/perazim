@@ -1,37 +1,32 @@
 import React from "react";
 import Button from "../Button/button";
 import Link from "next/link";
+import Image from "next/image";
 
 type Props = {
   title: string;
   caption: string;
-  href: string;
+  uri: string;
 };
 
-const ImageCard = ({ href, title, caption }: Props) => {
+const ImageCard = ({ uri, title, caption }: Props) => {
   return (
-    <div className="w-full md:w-[32%] md:h-[400px] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <a>
-        <img
-          className="rounded-t-lg"
-          src="https://flowbite.com/docs/images/blog/image-1.jpg"
-          alt=""
-          style={{ width: "150px", height: "150px" }}
-        />
-      </a>
-      <div className="p-5">
-        <a href="#">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            {title}
-          </h5>
-        </a>
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          {caption}
-        </p>
+    <div className="w-full h-fit md:w-[32%] md:h-fit bg-white ">
+      <Image
+        className="rounded-t-lg"
+        src={uri}
+        width={350}
+        height={250}
+        alt="image showing one of the services"
+      />
 
-        <Link href={href}>
-          <Button title="Read more" />
-        </Link>
+      <div className="p-5">
+        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+          {title}
+        </h5>
+        <div className="mb-3 text-[15px] text-justify text-gray-700 ">
+          {caption}
+        </div>
       </div>
     </div>
   );

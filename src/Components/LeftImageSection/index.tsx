@@ -11,6 +11,7 @@ const LeftImageSection = (props: Props) => {
     <section
       className="flex flex-col justify-center antialiased  text-gray-200 h-fit mt-10"
       ref={ref}
+      id="about"
     >
       {isInView && (
         <M.div
@@ -28,11 +29,11 @@ const LeftImageSection = (props: Props) => {
               <figure className="relative h-0 pb-[56.25%] md:pb-[75%] lg:pb-[56.25%] overflow-hidden transform md:-translate-y-2 xl:-translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-700 ease-out">
                 <img
                   className="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out"
-                  src="/perazim-shell.png"
+                  src="/perazim-fuel-station.png"
                   width="540"
                   height="303"
                   alt="Perazim guard standing infront of a petro station"
-                  style={{ objectFit: "cover" }}
+                  style={{ objectFit: "contain" }}
                 />
               </figure>
             </a>

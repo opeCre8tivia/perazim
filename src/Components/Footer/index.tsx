@@ -1,4 +1,6 @@
+import Link from "next/link";
 import React from "react";
+import ScrollIntoView from "react-scroll-into-view";
 
 type Props = {};
 
@@ -17,44 +19,24 @@ const Footer = (props: Props) => {
           Perazim Security
         </a>
         <p className="my-6 text-gray-500 dark:text-gray-400">
-          Open-source library of over 400+ components and interactive elements
-          built for better .
+          We hold a reputation for both effective security solutions and the use
+          of innovative technology in the protection of life and property
         </p>
         <ul className="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
           <li>
-            <a href="#" className="mr-4 hover:underline md:mr-6 ">
-              About
-            </a>
+            <ScrollIntoView selector="#about">
+              <div className="mx-5 hover:underline">About</div>
+            </ScrollIntoView>
           </li>
           <li>
-            <a href="#" className="mr-4 hover:underline md:mr-6">
-              Premium
-            </a>
+            <ScrollIntoView selector="#services" alignToTop={true}>
+              <div className="mx-5 hover:underline">Our services</div>
+            </ScrollIntoView>
           </li>
           <li>
-            <a href="#" className="mr-4 hover:underline md:mr-6 ">
-              Campaigns
-            </a>
-          </li>
-          <li>
-            <a href="#" className="mr-4 hover:underline md:mr-6">
-              Blog
-            </a>
-          </li>
-          <li>
-            <a href="#" className="mr-4 hover:underline md:mr-6">
-              Affiliate Program
-            </a>
-          </li>
-          <li>
-            <a href="#" className="mr-4 hover:underline md:mr-6">
-              FAQs
-            </a>
-          </li>
-          <li>
-            <a href="#" className="mr-4 hover:underline md:mr-6">
-              Contact
-            </a>
+            <ScrollIntoView selector="#contact" alignToTop={true}>
+              <div className="mx-5 hover:underline">Contact</div>
+            </ScrollIntoView>
           </li>
         </ul>
         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">

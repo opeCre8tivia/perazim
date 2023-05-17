@@ -11,6 +11,13 @@ import NavBar from "../src/Components/NavBar";
 import ServicesSection from "../src/Components/ServicesSection";
 import MobileNav from "../src/Components/MobileNav";
 import { NavContext } from "../src/context/NavContext";
+import Contact from "../src/Components/Contact";
+// This is the way to import an SVG file and then pass it as a props
+//@ts-ignore
+import { ReactComponent as CompanyIcon } from "../public/perazimlogo.svg";
+//@ts-ignore
+import { WhatsAppWidget } from "react-whatsapp-widget";
+import "react-whatsapp-widget/dist/index.css";
 
 const Home: NextPage = () => {
   const [showMobileNav, setShowMobileNav] = useState<boolean>(false);
@@ -48,6 +55,10 @@ const Home: NextPage = () => {
           <ServicesSection />
         </section>
 
+        <div className="bg-gradient-to-tr from-orange-400 to-red-500 w-full h-fit py-5 px-4">
+          <Contact />
+        </div>
+
         {/* bizarre section */}
         <div className="w-full min-h-[400px]">
           <section className="bg-white dark:bg-gray-900">
@@ -66,9 +77,11 @@ const Home: NextPage = () => {
                 </svg>
 
                 <p className="text-2xl font-medium text-gray-900 dark:text-white">
-                  Perazim is just awesome. It contains tons of predesigned
-                  components and pages starting from login screen to complex
-                  dashboard. Perfect choice for your next SaaS application
+                  I recently used the security guard services offered by this
+                  company, and I was extremely impressed with their
+                  professionalism and attention to detail. The guards they
+                  provided were highly trained, experienced, and had a strong
+                  presence that ensured the safety of my premises.
                 </p>
 
                 <figcaption className="flex items-center justify-center mt-6 space-x-3">
@@ -79,10 +92,10 @@ const Home: NextPage = () => {
                   />
                   <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
                     <div className="pr-3 font-medium text-gray-900 dark:text-white">
-                      Micheal Otai
+                      Jascent Ndagire
                     </div>
                     <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
-                      CEO Shell Uganda
+                      Director Shammah University Schools
                     </div>
                   </div>
                 </figcaption>
@@ -90,6 +103,9 @@ const Home: NextPage = () => {
             </div>
           </section>
         </div>
+
+        {/* whats app widget */}
+        <WhatsAppWidget phoneNumber="256773576624" CompanyIcon={CompanyIcon} />
 
         {/* footer */}
 
