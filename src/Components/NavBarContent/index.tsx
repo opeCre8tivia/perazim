@@ -3,6 +3,7 @@ import Logo from "../Atomic/Logo/logo";
 import NavBarLink from "../NavBarLink";
 import { MdReorder } from "react-icons/md";
 import { NavContext } from "../../context/NavContext";
+import ScrollIntoView from "react-scroll-into-view";
 
 const NavBarContent = () => {
   const { setShowMobileNav }: any = useContext(NavContext);
@@ -16,9 +17,15 @@ const NavBarContent = () => {
       {/* menu items */}
       <div className=" w-[70%] h-full px-5 hidden md:flex justify-end items-center gap-8">
         <NavBarLink title="Home" />
-        <NavBarLink title="Our Services" />
-        <NavBarLink title="About" />
-        <NavBarLink title="Contact" />
+        <ScrollIntoView selector="#services" alignToTop={true}>
+          <NavBarLink title="Our Services" />
+        </ScrollIntoView>
+        <ScrollIntoView selector="#about" alignToTop={true}>
+          <NavBarLink title="About" />
+        </ScrollIntoView>
+        <ScrollIntoView selector="#contact" alignToTop={true}>
+          <NavBarLink title="Contact" />
+        </ScrollIntoView>
       </div>
 
       {/* mobile phone icon */}

@@ -15,8 +15,8 @@ const Contact = (props: Props) => {
 
     emailjs
       .sendForm(
-        "service_3laiyma",
-        "template_3lsodrn",
+        "service_hd1x509",
+        "template_rz2t1hf",
         form.current,
         "bhcs8KRNTyxHgcgrC"
       )

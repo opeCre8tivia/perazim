@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import Button from "../Atomic/Button/button";
 import { motion as M, useInView } from "framer-motion";
 import Link from "next/link";
+import ScrollIntoView from "react-scroll-into-view";
 
 const HeroSection = () => {
   /*
@@ -47,7 +48,9 @@ const HeroSection = () => {
 
           {/* buttons */}
           <div className="w-full flex justify-center">
-            <Button title="Get started" />
+            <ScrollIntoView selector="#services" alignToTop={true}>
+              <Button title="Our Services" />
+            </ScrollIntoView>
 
             <Link href="https://wa.me/256773576624">
               <div className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
