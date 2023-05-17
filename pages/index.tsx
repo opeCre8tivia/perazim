@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import type { NextPage } from "next";
 import Head from "next/head";
 import SectionHeading from "../src/Components/Atomic/SectionHeading/sectionHeading";
@@ -7,8 +9,11 @@ import HeroSection from "../src/Components/HeroSection";
 import LeftImageSection from "../src/Components/LeftImageSection";
 import NavBar from "../src/Components/NavBar";
 import ServicesSection from "../src/Components/ServicesSection";
+import MobileNav from "../src/Components/MobileNav";
+import { NavContext } from "../src/context/NavContext";
 
 const Home: NextPage = () => {
+  const [showMobileNav, setShowMobileNav] = useState<boolean>(false);
   return (
     <div className={`bg-gray-20`}>
       <Head>
@@ -22,9 +27,11 @@ const Home: NextPage = () => {
 
       <main>
         {/* modern responsive dynamic menu bar */}
-        <nav style={{ height: "100px" }}>
-          <NavBar />{" "}
-        </nav>
+
+        <NavContext.Provider value={{ showMobileNav, setShowMobileNav }}>
+          <NavBar />
+          <MobileNav />
+        </NavContext.Provider>
 
         {/* carousel section */}
         <section>

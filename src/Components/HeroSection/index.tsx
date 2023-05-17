@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import Button from "../Atomic/Button/button";
 import { motion as M, useInView } from "framer-motion";
+import Link from "next/link";
 
 const HeroSection = () => {
   /*
@@ -34,7 +35,7 @@ const HeroSection = () => {
           }}
           animate={{ x: 0 }}
           transition={{ duration: 1 }}
-          className="w-full h-fit md:w-[50%] md:fit flex flex-col items-center justify-center"
+          className="w-full h-fit md:w-[50%] md:fit flex flex-col items-center justify-center mt-10 sm:mt-0"
         >
           <h1 className="max-w-2xl mb-4 pl-6 pr-6 text-xl text-center font-extrabold tracking-tight leading-none md:text-3xl xl:text-5xl dark:text-white">
             Security Solutions for businesses and individuals
@@ -47,12 +48,12 @@ const HeroSection = () => {
           {/* buttons */}
           <div className="w-full flex justify-center">
             <Button title="Get started" />
-            <a
-              href="#"
-              className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
-            >
-              Speak to Sales
-            </a>
+
+            <Link href="https://wa.me/256773576624">
+              <div className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                Speak to Sales
+              </div>
+            </Link>
           </div>
         </M.div>
       )}

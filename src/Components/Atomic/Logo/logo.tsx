@@ -15,7 +15,7 @@ type Props = {
 
 const Logo = ({ long, color = "red" }: Props) => {
   return (
-    <div className="flex w-fit h-fit justify-center items-center m-1">
+    <div className="flex w-full sm:w-fit h-fit justify-center items-center m-1">
       <div className="flex justify-center items-center">
         <Image
           alt="perazim logo"
@@ -25,7 +25,9 @@ const Logo = ({ long, color = "red" }: Props) => {
         />
       </div>
       {long && (
-        <div className={`text-lg  text-${color}-500 font-bold px-4`}>
+        <div
+          className={`text-lg ml-5 sm:ml-0 text-${color}-500 font-bold px-4  whitespace-nowrap`}
+        >
           PERAZIM SECURITY
         </div>
       )}
