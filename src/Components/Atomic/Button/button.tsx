@@ -1,23 +1,23 @@
-import Link from "next/link";
-import React from "react";
+import Link from "next/link"
+import React from "react"
 
 type Props = {
   /**
    * Text that is rendered as button title
    */
-  title: string;
+  title: string
 
   /**
    * Pass an object to change the buton styles
    */
-  style?: object;
+  style?: object
 
   /**
    * href passed to next js Link component for navigation
    */
 
-  href?: string;
-};
+  href?: string
+}
 
 /**
  * Perazim block button
@@ -25,7 +25,7 @@ type Props = {
 const Button = ({ title, style, href }: Props) => {
   return (
     <Link href={href ? href : "#"}>
-      <div className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg  bg-gradient-to-tr from-orange-400 to-red-500 hover:bg-orange-300 focus:ring-4 focus:ring-orange-300 dark:focus:ring-gray-900">
+      <div className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg  bg-gradient-to-tr from-orange-400 to-red-500 hover:bg-orange-300 focus:ring-4 focus:ring-orange-300">
         {title}
         <svg
           className="w-5 h-5 ml-2 -mr-1"
@@ -41,7 +41,7 @@ const Button = ({ title, style, href }: Props) => {
         </svg>
       </div>
     </Link>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button

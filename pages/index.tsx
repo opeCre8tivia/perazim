@@ -1,27 +1,27 @@
-import { useState } from "react";
+import { useState } from "react"
 
-import type { NextPage } from "next";
-import Head from "next/head";
-import SectionHeading from "../src/Components/Atomic/SectionHeading/sectionHeading";
-import SectionTitle from "../src/Components/Atomic/SectionTitle";
-import Footer from "../src/Components/Footer";
-import HeroSection from "../src/Components/HeroSection";
-import LeftImageSection from "../src/Components/LeftImageSection";
-import NavBar from "../src/Components/NavBar";
-import ServicesSection from "../src/Components/ServicesSection";
-import MobileNav from "../src/Components/MobileNav";
-import { NavContext } from "../src/context/NavContext";
-import Contact from "../src/Components/Contact";
+import type { NextPage } from "next"
+import Head from "next/head"
+import SectionHeading from "../src/Components/Atomic/SectionHeading/sectionHeading"
+import SectionTitle from "../src/Components/Atomic/SectionTitle"
+import Footer from "../src/Components/Footer"
+import HeroSection from "../src/Components/HeroSection"
+import LeftImageSection from "../src/Components/LeftImageSection"
+import NavBar from "../src/Components/NavBar"
+import ServicesSection from "../src/Components/ServicesSection"
+import MobileNav from "../src/Components/MobileNav"
+import { NavContext } from "../src/context/NavContext"
+import Contact from "../src/Components/Contact"
 // This is the way to import an SVG file and then pass it as a props
 //@ts-ignore
-import { ReactComponent as CompanyIcon } from "../public/perazimlogo.svg";
+import { ReactComponent as CompanyIcon } from "../public/perazimlogo.svg"
 //@ts-ignore
-import { WhatsAppWidget } from "react-whatsapp-widget";
-import "react-whatsapp-widget/dist/index.css";
-import Image from "next/image";
+import { WhatsAppWidget } from "react-whatsapp-widget"
+import "react-whatsapp-widget/dist/index.css"
+import Image from "next/image"
 
 const Home: NextPage = () => {
-  const [showMobileNav, setShowMobileNav] = useState<boolean>(false);
+  const [showMobileNav, setShowMobileNav] = useState<boolean>(false)
   return (
     <div className={`bg-gray-20`}>
       <Head>
@@ -62,11 +62,11 @@ const Home: NextPage = () => {
 
         {/* bizarre section */}
         <div className="w-full min-h-[400px]">
-          <section className="bg-white dark:bg-gray-900">
+          <section className="bg-white">
             <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
               <figure className="max-w-screen-md mx-auto">
                 <svg
-                  className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+                  className="h-12 mx-auto mb-3 text-gray-400"
                   viewBox="0 0 24 27"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +77,7 @@ const Home: NextPage = () => {
                   />
                 </svg>
 
-                <p className="text-2xl font-medium text-gray-900 dark:text-white">
+                <p className="text-2xl font-medium text-gray-900">
                   I recently used the security guard services offered by this
                   company, and I was extremely impressed with their
                   professionalism and attention to detail. The guards they
@@ -94,10 +94,10 @@ const Home: NextPage = () => {
                     height={50}
                   />
                   <div className="flex items-center divide-x-2 divide-gray-500">
-                    <div className="pr-3 font-medium text-gray-900 dark:text-white">
+                    <div className="pr-3 font-medium text-gray-900">
                       Jascent Ndagire
                     </div>
-                    <div className="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">
+                    <div className="pl-3 text-sm font-light text-gray-500 ">
                       Director Shammah University Schools
                     </div>
                   </div>
@@ -115,7 +115,7 @@ const Home: NextPage = () => {
         <Footer />
       </main>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

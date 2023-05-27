@@ -1,12 +1,12 @@
-import React, { useRef } from "react";
-import Button from "../Atomic/Button/button";
-import { motion as M, useInView } from "framer-motion";
+import React, { useRef } from "react"
+import Button from "../Atomic/Button/button"
+import { motion as M, useInView } from "framer-motion"
 
-type Props = {};
+type Props = {}
 
 const LeftImageSection = (props: Props) => {
-  let ref = useRef(null);
-  const isInView = useInView(ref);
+  let ref = useRef(null)
+  const isInView = useInView(ref)
   return (
     <section
       className="flex flex-col justify-center antialiased  text-gray-200 h-fit mt-10"
@@ -69,10 +69,10 @@ const LeftImageSection = (props: Props) => {
                 </div>
               </header>
               <div className="mt-4 md:mt-0">
-                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
                   Your Security is our mission.
                 </h2>
-                <p className="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
+                <p className="mb-6 font-light text-gray-500 md:text-lg">
                   We have the team, tools,and expertise needed to ensure a more
                   secure enviroment for our client at any given location
                   countrywide. With our national expertise in security
@@ -86,7 +86,7 @@ const LeftImageSection = (props: Props) => {
         </M.div>
       )}
     </section>
-  );
-};
+  )
+}
 
-export default LeftImageSection;
+export default LeftImageSection
