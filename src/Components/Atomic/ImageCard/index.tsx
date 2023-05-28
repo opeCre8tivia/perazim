@@ -23,7 +23,6 @@ const ImageCard = ({ uri, title, caption, description }: Props) => {
         alt="image showing one of the services"
         style={{
           minWidth: "500px",
-          backgroundColor: "red",
           objectFit: "cover",
         }}
       />
