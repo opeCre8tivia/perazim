@@ -25,10 +25,12 @@ const Home: NextPage = () => {
   return (
     <div className={`bg-gray-20`}>
       <Head>
-        <title>Perazim Security </title>
+        <title>
+          Perazim Security | offering security services all over uganda
+        </title>
         <meta
           name="description"
-          content="Offering Security Services around kampala and uganda as a whole"
+          content="Perazim security ltd is one the best private security organisations Offering Security Services around kampala and uganda as a whole"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
