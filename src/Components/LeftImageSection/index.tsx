@@ -15,7 +15,7 @@ const LeftImageSection = (props: Props) => {
     >
       {isInView && (
         <M.div
-          initial={{ y: 600, opacity: 0 }}
+          initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
           className="w-full mx-auto p-4 sm:px-6 h-fit"

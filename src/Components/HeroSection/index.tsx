@@ -11,7 +11,7 @@ const HeroSection = () => {
   const ref = useRef(null)
   const isInView = useInView(ref)
 
-  const [x, setX] = useState<number>(-600)
+  const [x, setX] = useState<number>(-10)
   const [y, setY] = useState<number>(0)
 
   useEffect(() => {

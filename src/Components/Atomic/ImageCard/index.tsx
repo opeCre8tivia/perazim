@@ -27,11 +27,11 @@ const ImageCard = ({ uri, title, caption, description }: Props) => {
         }}
       />
 
-      <div className="p-5 h-[300px] relative bg-[#f9f9f9]">
+      <div className="p-5 h-[300px] sm:h-fit sm:pb-8 relative bg-[#f9f9f9]">
         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
           {title}
         </h5>
-        <div className="mb-3 text-[15px] text-justify text-gray-700 ">
+        <div className="mb-3 text-[15px] text-justify text-gray-700  ">
           {caption}
         </div>
 
