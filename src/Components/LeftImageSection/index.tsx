@@ -69,9 +69,9 @@ const LeftImageSection = (props: Props) => {
                 </div>
               </header>
               <div className="mt-4 md:mt-0">
-                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
+                <h1 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
                   Your Security is our mission.
-                </h2>
+                </h1>
                 <p className="mb-6 font-light text-gray-500 md:text-lg">
                   We have the team, tools,and expertise needed to ensure a more
                   secure enviroment for our client at any given location

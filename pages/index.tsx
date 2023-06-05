@@ -25,13 +25,15 @@ const Home: NextPage = () => {
   return (
     <div className={`bg-gray-20`}>
       <Head>
-        <title>
-          Perazim Security | offering security services all over uganda
-        </title>
+        <meta charSet="UTF-8" />
         <meta
           name="description"
           content="Perazim security ltd is one the best private security organisations Offering Security Services around kampala and uganda as a whole"
         />
+        <title>
+          Perazim Security | offering security services all over uganda
+        </title>
+
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -118,6 +120,10 @@ const Home: NextPage = () => {
       </main>
     </div>
   )
+}
+
+export const getStaticProps = async () => {
+  return { props: {} }
 }
 
 export default Home

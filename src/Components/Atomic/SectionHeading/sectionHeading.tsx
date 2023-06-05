@@ -1,16 +1,16 @@
-import React from "react";
+import React from "react"
 
 type Props = {
-  heading: string;
-  color?: "red" | "black";
-};
+  heading: string
+  color?: "red" | "black"
+}
 
 const SectionHeading = ({
   heading = "Section Heading",
   color = "black",
 }: Props) => {
   return (
-    <div
+    <h1
       style={{
         fontSize: "28px",
         fontWeight: "bold",
@@ -28,8 +28,8 @@ const SectionHeading = ({
       {heading}
       {/* line */}
       <div className="w-[20%] h-[4px] bg-gradient-to-tr from-orange-400 to-red-500"></div>
-    </div>
-  );
-};
+    </h1>
+  )
+}
 
-export default SectionHeading;
+export default SectionHeading
